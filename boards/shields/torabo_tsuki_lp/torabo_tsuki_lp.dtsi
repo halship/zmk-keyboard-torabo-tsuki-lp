@@ -49,6 +49,9 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
 
+        debounce-press-ms = <8>;
+        debounce-release-ms = <8>;
+
         col-gpios
             = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&gpio1 15   (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
